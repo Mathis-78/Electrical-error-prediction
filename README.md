@@ -70,7 +70,6 @@ Formule de la charge:
 
 $$
 L_i(t) = L_{\text{base}}(t) \cdot (1 + k_{\text{report}} \cdot S_i(t)) + \epsilon
-
 $$
 
 
