@@ -262,5 +262,11 @@ En appliquant cette modification, je ne tombait plus sur la précision de 0.05 m
 Jusque là, pour calculer l’erreur j’utilisais MSE (mean square error) calculée avec
 
 
- $\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (Y_i - \hat{Y}_i)^2$ . Pour calculer les poids des neurones, j’utilisais la fonction sigmoïde, ce qui donnait des gradients faibles, rend l’apprentissage lent voir le bloque. En réalité la fonction sigmoïde n’est pas adaptée pour un problème comme celui-ci avec plusieurs neurones en sortie. La fonction relu va forcer à choisir une seule sortie.
+ $\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (Y_i - \hat{Y}_i)^2$ . Pour calculer les poids des neurones, j’utilisais la fonction sigmoïde, ce qui donnait des gradients faibles, rend l’apprentissage lent voir le bloque (ce qui donne une précision de 0.04748 correspondant à la mouenne quadratique donnée par $MSE = \frac{1}{20} \times [ (1 - 0.05)^2 + 19 \times (0 - 0.05)^2 ] \approx \mathbf{0.0475}$). En réalité la fonction sigmoïde n’est pas adaptée pour un problème comme celui-ci avec plusieurs neurones en sortie. De plus, l’utilisation de la fonction sigmoïde en sortie pose problème lorsque plusieurs neurones de sortie sont présents. Chaque neurone étant traité indépendamment, aucune contrainte n’impose qu’une seule classe soit prédite. Par ailleurs, la sigmoïde souffre d’un phénomène de saturation : lorsque les sorties sont proches de 0 ou de 1, les gradients deviennent très faibles, ce qui ralentit considérablement l’apprentissage.
+
+À l’inverse, la fonction Softmax est spécifiquement conçue pour les problèmes de classification multi-classes. Elle transforme les sorties du réseau en une distribution de probabilité normalisée dont la somme vaut 1, introduisant ainsi une compétition entre les classes.
+
+Associée à la fonction de coût Cross-Entropy, cette architecture permet d’optimiser directement la probabilité de la classe correcte. La Cross-Entropy pénalise fortement les prédictions incorrectes mais confiantes, et son gradient est plus stable, ce qui améliore la vitesse et la fiabilité de l’apprentissage.
+
+Ainsi, l’architecture Cross-Entropy + Softmax est beaucoup mieux adaptée à ce projet que la combinaison MSE + sigmoïde.
 
