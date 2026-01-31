@@ -1,0 +1,1 @@
+streamlit run simulator_with_prediction.py
