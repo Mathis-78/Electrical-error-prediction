@@ -9,13 +9,11 @@ De Mathis Toba
 
 ## Informations générales
 
+Mon projet consiste à réaliser une intelligence artificielle capable de prévoir sur quelle composant d'un circuit électronique peut apparaître la prochaine panne.
 
 Un système électronique est représenté par un réseau de nœuds interconnectés. Chaque nœud représente un composant du système. 
 
-
 Ce système évolue dans le temps, et peut comporter des pannes. Le calcul des pannes sera défini ultérieurement. Plus le temps évolue, et plus les pannes apparaissent. L’état d’un composant dépendra aussi de l’état des composants reliés à celui-ci.
-
-Le projet consiste à réaliser une intelligence artificielle capable de prévoir sur quelle noeud peut apparaître la prochaine panne.
 
 
 ## Etat du composant
