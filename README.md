@@ -1,4 +1,4 @@
-# IA de prédiction de pannes de composants informatiques
+# IA de prédiction de pannes de composants électroniques
 
 
 De Mathis Toba
