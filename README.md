@@ -9,7 +9,7 @@ De Mathis Toba
 
 ## Informations générales
 
-Mon projet consiste à réaliser une intelligence artificielle capable de prévoir sur quelle composant d'un circuit électronique peut apparaître la prochaine panne.
+Mon projet consiste à réaliser une intelligence artificielle capable de prévoir sur quel composant d'un circuit électronique peut apparaître la prochaine panne.
 
 Un système électronique est représenté par un réseau de nœuds interconnectés. Chaque nœud représente un composant du système. 
 
