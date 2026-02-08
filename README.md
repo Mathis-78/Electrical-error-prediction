@@ -13,7 +13,7 @@ Mon projet consiste à réaliser une intelligence artificielle capable de prédi
 
 Un système électronique est représenté par un réseau de nœuds interconnectés. Chaque nœud représente un composant du système. 
 
-Ce système évolue dans le temps, et peut comporter des pannes. Le calcul des pannes sera défini ultérieurement. Plus le temps évolue, et plus les pannes apparaissent. L’état d’un composant dépendra aussi de l’état des composants reliés à celui-ci.
+Ce système évolue dans le temps, et peut comporter des pannes. Le calcul des pannes sera défini ultérieurement. Plus le temps évolue, plus les pannes apparaissent. L’état d’un composant dépendra aussi de l’état des composants reliés à celui-ci.
 
 
 ## Etat du composant
