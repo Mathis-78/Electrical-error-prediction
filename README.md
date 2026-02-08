@@ -1,10 +1,10 @@
-# Correcteur de système
+# IA de prédiction de pannes de composants informatiques
 
 
 De Mathis Toba
 
 
-# Explications du système
+# Explications du scénario
 
 
 ## Informations générales
@@ -14,6 +14,8 @@ Un système électronique est représenté par un réseau de nœuds interconnect
 
 
 Ce système évolue dans le temps, et peut comporter des pannes. Le calcul des pannes sera défini ultérieurement. Plus le temps évolue, et plus les pannes apparaissent. L’état d’un composant dépendra aussi de l’état des composants reliés à celui-ci.
+
+Le projet consiste à réaliser une intelligence artificielle capable de prévoir sur quelle noeud peut apparaître la prochaine panne.
 
 
 ## Etat du composant
